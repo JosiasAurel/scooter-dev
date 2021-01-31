@@ -1,0 +1,73 @@
+
+.header {
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	font-family: monospace;
+	filter: invert(180);
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.startButtonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.getStartedButton {
+	border: solid transparent;
+	padding: 1em 5em 1em 5em;
+	background-color: #2fd479;
+	border-radius: 8px;
+	box-shadow: 0 0 4px 4px #e8e8e8;
+	font-family: monospace;
+	color: #fff;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 2em;
+	margin: 2em;
+}
+
+.card {
+	background-color: #009af5;;
+	font-family: monospace;
+	text-align: center;
+	border-radius: 6px;
+	max-width: 300px;
+	color: white;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: monospace;
+}
+
+.footer a {
+	color: grey;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 830px) {
+	.c {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.card {
+		min-width: 400px;
+	}
+}
