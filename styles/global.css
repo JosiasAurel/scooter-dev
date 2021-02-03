@@ -2,12 +2,18 @@
 * {
 	font-family: monospace;
 	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
 }
 
 body {
 	margin: 0 auto;
+	scroll-behaviour: smooth;
 }
 
 pre {
 	border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
