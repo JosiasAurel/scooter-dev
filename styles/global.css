@@ -1,0 +1,13 @@
+
+* {
+	font-family: monospace;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+pre {
+	border-radius: 8px;
+}
