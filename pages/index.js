@@ -23,7 +23,7 @@ function Index() {
 			/>
 			</span>
 			<span className={styles.startButtonContainer}> 
-			<Link href="/auth">
+			<Link href="/scoots">
 			<button className={styles.getStartedButton}>
 				Get Started
 			 </button>
