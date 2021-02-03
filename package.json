@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@apollo/client": "^3.3.7",
+    "@geist-ui/react": "^2.1.0-canary.2",
     "apollo-server": "^2.19.2",
     "mongoose": "^5.11.14",
     "next": "^10.0.5",
