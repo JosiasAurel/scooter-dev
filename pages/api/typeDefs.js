@@ -15,7 +15,7 @@ type Query {
 
 
 type Mutation {
-	post(content: String!): Scoot!
+	post(content: String!, title: String!): Scoot!
 }
 
 `
