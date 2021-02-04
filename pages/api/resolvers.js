@@ -2,6 +2,8 @@ const mongoose = require('mongoose')
 
 const data = require("./sampleData")
 
+const { Scoot } = require("./schema")
+
 const { MONGO_DB_URI } = require('./config')
 
 // init db 
