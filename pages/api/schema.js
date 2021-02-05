@@ -1,9 +1,11 @@
 
 const mongoose = require('mongoose')
 
-const Scoot = new mongoose.Schema({
+const ScootSchema = new mongoose.Schema({
 	content: String,
 	title: String
 })
+
+const Scoot = mongoose.model('Scoot', ScootSchema)
 
 module.exports = { Scoot }

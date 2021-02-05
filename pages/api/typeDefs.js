@@ -4,18 +4,18 @@ const { gql } = require("apollo-server")
 const typeDefs = gql`
 
 type Scoot {
-	content: String!,
-	title: String!
+	content: String
+	title: String
+	id: ID
 }
 
 type Query {
 	scoots: [Scoot]
-	scoot: Scoot
 }
 
 
 type Mutation {
-	post(content: String!, title: String!): Scoot!
+	scoot(content: String!, title: String!): Scoot!
 }
 
 `
