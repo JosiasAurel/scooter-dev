@@ -1,0 +1,21 @@
+const mongoose = require('mongoose')
+
+const MONGO_DB_URI = "mongodb+srv://scooter:scooter500@cluster0.7kwvr.mongodb.net/scooter?retryWrites=true&w=majority"
+
+const ScootSchema = new mongoose.Schema({
+        content: String,
+        title: String
+})
+
+const Scoot = mongoose.model('Scoot', ScootSchema)
+
+module.exports = (req, res) => {
+	if (req.method === 'POST') {
+		const { title, content } = req.body
+		let newScoot = new Scoot({
+			title: title,
+			content: content
+		})
+		newScoot.save((err, sc) => res.json(sc))
+	}
+}
