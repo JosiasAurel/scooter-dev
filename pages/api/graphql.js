@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require("apollo-server-micro")
+const { ApolloServer, gql } = require("apollo-server-lambda")
 
 const { typeDefs } = require("./typeDefs")
 const { resolvers } = require("./resolvers")
@@ -13,7 +13,9 @@ export const config = {
 
 const server = new ApolloServer({playground: true, typeDefs, resolvers });
 
-module.exports = server.createHandler({path: "/api/graphql"});
+exports.handler = server.createHandler({path: "/api/graphql"});
+
+
 
 /*
 server.listen().then(({url}) => {
