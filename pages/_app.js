@@ -5,7 +5,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
 import React from "react"
 
 const client = new ApolloClient({
-	uri: "/api",
+	uri: "/api/graphql",
 	cache: new InMemoryCache()
 })
 
