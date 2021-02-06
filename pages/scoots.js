@@ -78,9 +78,9 @@ const Scoots = () => {
 		</Modal.Action>
 		</Modal>
 		</header>			
-		
+		Test deployment
 		<div className={styles.scootsContainer}>
-		
+		{/*
 		{scoots.map(sample => {
 		return (
 		<div className={styles.scootContainer}>
@@ -93,7 +93,7 @@ const Scoots = () => {
 		</div>
 		)
 		})}
-	
+	*/}
 		</div>
 		</>
 	)
