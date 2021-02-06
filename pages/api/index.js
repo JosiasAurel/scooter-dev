@@ -6,8 +6,14 @@ const { resolvers } = require("./resolvers")
 const server = new ApolloServer({playground: true, typeDefs, resolvers})
 
 export default server.createHandler({
-	path: '/api'
+	path: '/api/graphql'
 })
+
+export const config = {
+	api: {
+		bodyParser: true
+	}
+}
 
 /*
 server.listen().then(({url}) => {
