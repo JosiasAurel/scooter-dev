@@ -6,6 +6,9 @@
 	align-items: center;
 	margin: 0 1em 0 1em;
 	width: 95vw;
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(5px);
 }
 
 .header > button {
@@ -24,7 +27,7 @@
 }
 
 .scootsContainer {
-	margin-top: 2em;
+	margin-top: 4em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
