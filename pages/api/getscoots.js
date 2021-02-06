@@ -10,13 +10,9 @@ const ScootSchema = new mongoose.Schema({
 
 const Scoot = mongoose.model('Scoot', ScootSchema)
 
-let scoots 
-Scoot.find((err, data) => {
-	scoots = data
-})
 
 module.exports = (req, res) => {
-	res.json({
-		scoots: scoots
+	Scoot.find((err, data) => {
+		res.send(data)
 	})
 }
