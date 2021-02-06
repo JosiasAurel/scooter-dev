@@ -94,8 +94,19 @@ exports.handler = server.createHandler({path: "/api/graphql"});
 
 */
 
+export default server.createHandler({
+  path: '/api/graphql',
+});
 
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
+/*
 server.listen().then(({url}) => {
 	console.log(`[working]: ${url}`)
 })
 
+*/
