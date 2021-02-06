@@ -4,9 +4,9 @@ const { gql } = require("apollo-server")
 const typeDefs = gql`
 
 type Scoot {
-	content: String
-	title: String
-	id: ID
+	content: String!
+	title: String!
+	id: ID!
 }
 
 type Query {

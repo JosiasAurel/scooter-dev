@@ -19,7 +19,8 @@ var dbRes = []
 const resolvers = {
 	Query: {
 		scoots: () => {
-		
+
+		try {
 		Scoot.find((err, scoots) => {
 		
 			scoots.forEach(scoot => {
@@ -32,6 +33,9 @@ const resolvers = {
 			})
 		})
 		return dbRes
+		} finally {
+			dbRes = []
+		}
 		}
 	},
 	Mutation: {

@@ -1,5 +1,5 @@
 
-const MONGO_DB_URI = "mongodb://localhost:27017/scooter"
+const MONGO_DB_URI = "mongodb+srv://scooter:scooter500@cluster0.7kwvr.mongodb.net/scooter?retryWrites=true&w=majority"
 
 const DB_NAME = "scooter"
 
