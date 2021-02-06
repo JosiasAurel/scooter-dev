@@ -9,7 +9,7 @@ const { MONGO_DB_URI, DB_NAME } = require('./config')
 
 
 // init db 
-mongoose.connect(MONGO_DB_URI, {useNewUrlParser: true})
+mongoose.connect(MONGO_DB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 
 // get db object
 const db = mongoose.connection
