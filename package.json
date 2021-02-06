@@ -16,7 +16,7 @@
   "author": "Josias Aurel",
   "license": "MIT",
   "dependencies": {
-    "@apollo/client": "^3.3.7",
+    "@apollo/client": "^3.3.8",
     "@geist-ui/react": "^2.1.0-canary.2",
     "apollo-server": "^2.19.2",
     "apollo-server-lambda": "^2.19.2",
