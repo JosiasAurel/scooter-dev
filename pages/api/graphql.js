@@ -1,4 +1,5 @@
-const { ApolloServer, gql } = require("apollo-server")
+const { ApolloServer, gql } = require("apollo-server-micro")
+
 const mongoose = require('mongoose')
 
 const ScootSchema = new mongoose.Schema({
