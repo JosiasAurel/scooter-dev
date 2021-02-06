@@ -55,7 +55,6 @@ const resolvers = {
 				})
 			})
 		})
-		setTimeout(2000, () => "not")
 		return dbRes
 		} finally {
 			dbRes = []
