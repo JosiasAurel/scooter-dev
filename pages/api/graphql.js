@@ -1,5 +1,4 @@
-const { ApolloServer, gql } = require("apollo-server")
-
+const { ApolloServer, gql } = require("apollo-server-micro")
 const mongoose = require('mongoose')
 
 const ScootSchema = new mongoose.Schema({
@@ -81,13 +80,7 @@ const resolvers = {
 }
 
 
-/*
-export const config = {
-	api: {
-		bodyParser: false
-	}
-}
-*/
+
 const server = new ApolloServer({playground: true, typeDefs, resolvers });
 
 /*
@@ -95,7 +88,7 @@ exports.handler = server.createHandler({path: "/api/graphql"});
 
 */
 
-/*
+
 export default server.createHandler({
   path: '/api/graphql',
 });
@@ -105,10 +98,11 @@ export const config = {
     bodyParser: false,
   },
 };
-*/
 
+
+/*
 server.listen().then(({url}) => {
 	console.log(`[working]: ${url}`)
 })
 
-
+*/
