@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require("apollo-server-micro")
+const { ApolloServer, gql } = require("apollo-server")
 
 const mongoose = require('mongoose')
 
@@ -45,7 +45,7 @@ const resolvers = {
 
 		try {
 		Scoot.find((err, scoots) => {
-		
+			
 			scoots.forEach(scoot => {
 			
 				 dbRes.push({
@@ -55,6 +55,7 @@ const resolvers = {
 				})
 			})
 		})
+		setTimeout(2000, () => "not")
 		return dbRes
 		} finally {
 			dbRes = []
@@ -95,6 +96,7 @@ exports.handler = server.createHandler({path: "/api/graphql"});
 
 */
 
+/*
 export default server.createHandler({
   path: '/api/graphql',
 });
@@ -104,10 +106,10 @@ export const config = {
     bodyParser: false,
   },
 };
+*/
 
-/*
 server.listen().then(({url}) => {
 	console.log(`[working]: ${url}`)
 })
 
-*/
+
