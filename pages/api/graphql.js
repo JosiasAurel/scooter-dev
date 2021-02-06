@@ -11,7 +11,7 @@ export default server.createHandler({
 
 export const config = {
 	api: {
-		bodyParser: true
+		bodyParser: false
 	}
 }
 
