@@ -20,7 +20,6 @@
     "@geist-ui/react": "^2.1.0-canary.2",
     "apollo-server": "^2.19.2",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "mongoose": "^5.11.15",
     "next": "^10.0.5",
     "react": "^17.0.1",
