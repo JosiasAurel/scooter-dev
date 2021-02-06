@@ -12,7 +12,10 @@ const Scoot = mongoose.model('Scoot', ScootSchema)
 
 
 module.exports = (req, res) => {
-	Scoot.find((err, data) => {
-		res.send(data)
-	})
+	Scoot.find()
+		.lean()
+		.exec((err, data) => {
+			res.send(data)
+		})
+		
 }
