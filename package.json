@@ -20,6 +20,7 @@
     "@geist-ui/react": "^2.1.0-canary.2",
     "@saeris/apollo-server-vercel": "^0.4.0",
     "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
     "apollo-server": "^2.19.2",
     "apollo-server-lambda": "^2.19.2",
     "apollo-server-micro": "^2.19.2",
