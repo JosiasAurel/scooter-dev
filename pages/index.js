@@ -25,7 +25,7 @@ function Index() {
 			<span className={styles.startButtonContainer}> 
 			<Link href="/scoots">
 			<button className={styles.getStartedButton}>
-				Get Started
+				Let Me In
 			 </button>
 			</Link>
 			</span>
@@ -35,12 +35,12 @@ function Index() {
 		<div className={styles.features}>
 		<span className={styles.card}>
 			<p>
-				Social Media Preview
+				GraphQL API
 			</p>
 		</span>
 		<span className={styles.card}>
 			<p>
-				Website Embed
+				No account
 			</p>
 		</span>
 		<span className={styles.card}>

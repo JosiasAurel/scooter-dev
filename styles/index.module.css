@@ -8,6 +8,7 @@
 	border-radius: 6px;
 	font-family: monospace;
 	filter: invert(180);
+	margin: 1em;
 }
 
 .logoContainer {
