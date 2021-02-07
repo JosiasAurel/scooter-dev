@@ -55,7 +55,7 @@ const resolvers = {
 				})
 			})
 		})
-		return dbRes
+		return dbRes.reverse()
 		} finally {
 			dbRes = []
 		}
