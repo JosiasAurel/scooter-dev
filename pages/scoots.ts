@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, FunctionComponent } from "react"
 
 import { Card, Modal, Textarea, useToasts } from "@geist-ui/react"
 import ReactMarkdown from "react-markdown"
@@ -67,7 +67,7 @@ content:
 ]
 */
 
-const Scoots = () => {
+const Scoots: FunctionComponent = (): JSX.Element => {
 	const [open, setOpen] = useState(false)
 	const handler = () => setOpen(true)
 	const close = () => setOpen(false)

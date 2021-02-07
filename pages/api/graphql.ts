@@ -1,4 +1,4 @@
-const { ApolloServer } = require("@saeris/apollo-server-vercel")
+import { ApolloServer } from "@saeris/apollo-server-vercel"
 
 const mongoose = require('mongoose')
 

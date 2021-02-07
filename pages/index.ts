@@ -1,11 +1,11 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 import styles from "../styles/index.module.css"
 import Image from "next/image"
 import Link from "next/link"
 
-function Index() {
+const Index: FunctionComponent = (): JSX.Element => {
 	return (
-		<>
+		<div>
 		<header className={styles.header}>
 		 <Image
 		  src="/scooterLogo.svg"
@@ -63,7 +63,7 @@ function Index() {
 		</a>
 		</p>
 		</footer>
-		</>
+		</div>
 	)
 }
 
