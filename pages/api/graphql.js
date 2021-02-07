@@ -79,17 +79,7 @@ const resolvers = {
 	}
 }
 
-
-
-//const server = new ApolloServer({playground: true, typeDefs, resolvers });
-
-/*
-exports.handler = server.createHandler({path: "/api/graphql"});
-
-*/
-
-
-const apolloServer = new ApolloServer({ typeDefs, resolvers })
+const apolloServer = new ApolloServer({playground: true, typeDefs, resolvers })
 
 export const config = {
   api: {
@@ -98,10 +88,3 @@ export const config = {
 }
 
 module.exports = apolloServer.createHandler({ path: '/api/graphql' })
-
-/*
-server.listen().then(({url}) => {
-	console.log(`[working]: ${url}`)
-})
-
-*/
