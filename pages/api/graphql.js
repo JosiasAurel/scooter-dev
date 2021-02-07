@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require("@saeris/apollo-server-vercel")
+const { ApolloServer } = require("@saeris/apollo-server-vercel")
 
 const mongoose = require('mongoose')
 
@@ -12,7 +12,7 @@ const Scoot = mongoose.model('Scoot', ScootSchema)
 
 const MONGO_DB_URI = "mongodb+srv://scooter:scooter500@cluster0.7kwvr.mongodb.net/scooter?retryWrites=true&w=majority"
 
-const typeDefs = gql`
+const typeDefs = `
 
 type Scoot {
 	content: String!
