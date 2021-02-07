@@ -22,6 +22,9 @@ const Index = () => {
 			height="200px"
 			/>
 			</span>
+			<h2 style={{textAlign: "center"}}>
+			Write and share short code snippets.
+			</h2>
 			<span className={styles.startButtonContainer}> 
 			<Link href="/scoots">
 			<button className={styles.getStartedButton}>
