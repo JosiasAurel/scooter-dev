@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from "react"
+import React from "react"
 import styles from "../styles/index.module.css"
 import Image from "next/image"
 import Link from "next/link"
 
-const Index: FunctionComponent = (): JSX.Element => {
+const Index = () => {
 	return (
 		<div>
 		<header className={styles.header}>
