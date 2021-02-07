@@ -1,4 +1,5 @@
-const { ApolloServer, gql } = require("apollo-server-micro")
+const { ApolloServer, gql } = require("@saeris/apollo-server-vercel")
+
 const mongoose = require('mongoose')
 
 const ScootSchema = new mongoose.Schema({
@@ -79,12 +80,18 @@ const resolvers = {
 	}
 }
 
-const apolloServer = new ApolloServer({playground: true, typeDefs, resolvers })
+const apolloServer = new ApolloServer({playground: true, introspection: true, typeDefs, resolvers })
+/*
 
 export const config = {
   api: {
     bodyParser: false,
   },
 }
+*/
 
-module.exports = apolloServer.createHandler({ path: '/api/graphql' })
+export default apolloServer.createHandler()
+
+//module.exports = apolloServer.createHandler({ path: '/api/graphql' })
+
+//apolloServer.listen().then(({ url }) => console.log(url))
